@@ -1,4 +1,4 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { CreateTaskDto, UpdateStateDto, UpdateTaskDto } from './dto/tasks.dto';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
@@ -15,53 +15,23 @@ export class TasksService {
     return this.tasksRepository.find()
   }
 
-  // getTaskById(id: number) {
-  //   const foundTask = this.tasks.find(task => task.id === id)
+  getTaskById(id: number): Promise<Task | null> {
+    return this.tasksRepository.findOneBy({id})
+  }
 
-  //   if (!foundTask) {
-  //     return new NotFoundException(`Task with id ${id} haven't been found!`).message
-  //   }
-  //   return foundTask
-  // }
+  createTask(task: CreateTaskDto) {
+    return this.tasksRepository.insert(task)
+  }
 
-  // createTask(task: CreateTaskDto) {
-  //   this.tasks.push({
-  //     ...task,
-  //     id: this.tasks.length + 1
-  //   })
-  //   return task;
-  // }
+  updateTask(id: number, task: UpdateTaskDto) {
+    return this.tasksRepository.update(id, task)
+  }
 
-  // updateTask(id: number, task: UpdateTaskDto) {
-  //   const taskIndex = this.tasks.findIndex(task => task.id === id)
+  async deleteTask(id: number): Promise<void> {
+   await this.tasksRepository.delete(id)
+  }
 
-  //   if (taskIndex === -1) {
-  //     return new NotFoundException(`Cannot update task with id ${id} as it's not been created before!`).message
-  //   }
-
-  //   const updatedTask = {
-  //     ...this.tasks[taskIndex],
-  //     ...task
-  //   }
-
-  //   this.tasks[taskIndex] = updatedTask
-
-  //   return this.tasks[taskIndex]
-  // }
-
-  // deleteTask(id: string) {
-  //   const taskIndex = this.tasks.findIndex(task => task.id.toString() === id)
-
-  //   if (taskIndex === -1) {
-  //     return new NotFoundException(`Cannot delete task with id ${id} as it's not been found!`).message
-  //   }
-
-  //   this.tasks.splice(taskIndex, 1)
-
-  //   return 'Task deleted succesfully!'
-  // }
-
-  // updateStatusTask(id: number, task: UpdateStateDto) {
-
-  // }
+  updateStatusTask(id: number, task: UpdateStateDto) {
+    return this.tasksRepository.update(id, task)
+  }
 }

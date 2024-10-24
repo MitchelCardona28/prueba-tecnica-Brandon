@@ -7,9 +7,6 @@ export class CreateTaskDto {
 
   @IsString()
   description?: string;
-
-  @IsString()
-  status?: string;
 }
 
 export class UpdateTaskDto extends CreateTaskDto{}

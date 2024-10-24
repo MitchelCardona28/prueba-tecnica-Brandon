@@ -11,28 +11,28 @@ export class TasksController {
       return this.tasksService.getTasks()
     }
 
-    // @Get('/:id')
-    // getById(@Param('id', ParseIntPipe) id: number) {
-    //   return this.tasksService.getTaskById(id)
-    // }
+    @Get('/:id')
+    getById(@Param('id', ParseIntPipe) id: number) {
+      return this.tasksService.getTaskById(id)
+    }
 
-    // @Post()
-    // create(@Body() task: CreateTaskDto) {
-    //   return this.tasksService.createTask(task)
-    // }
+    @Post()
+    create(@Body() task: CreateTaskDto) {
+      return this.tasksService.createTask(task)
+    }
 
-    // @Put('/:id')
-    // update(@Param('id', ParseIntPipe) id: number, @Body() task: UpdateTaskDto) {
-    //   return this.tasksService.updateTask(id, task)
-    // }
+    @Put('/:id')
+    update(@Param('id', ParseIntPipe) id: number, @Body() task: UpdateTaskDto) {
+      return this.tasksService.updateTask(id, task)
+    }
 
-    // @Delete('/:id')
-    // delete(@Param('id') id: string) {
-    //   return this.tasksService.deleteTask(id)
-    // }
+    @Delete('/:id')
+    delete(@Param('id', ParseIntPipe) id: number) {
+      return this.tasksService.deleteTask(id)
+    }
 
-    // @Patch('/:id')
-    // updateStatus(@Param('id', ParseIntPipe) id: number, @Body() task: UpdateStateDto) {
-    //   this.tasksService.updateStatusTask(id, task)
-    // }
+    @Patch('/:id')
+    updateStatus(@Param('id', ParseIntPipe) id: number, @Body() task: UpdateStateDto) {
+      this.tasksService.updateStatusTask(id, task)
+    }
 }
