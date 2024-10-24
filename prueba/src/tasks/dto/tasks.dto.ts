@@ -1,8 +1,9 @@
 import {IsString, IsNotEmpty} from 'class-validator'
 
-export class UpdateTaskDto {
+export class CreateTaskDto {
   @IsString()
-  title?: string;
+  @IsNotEmpty()
+  title: string;
 
   @IsString()
   description?: string;
@@ -11,15 +12,9 @@ export class UpdateTaskDto {
   status?: string;
 }
 
-export class CreateTaskDto {
-  @IsString()
-  @IsNotEmpty()
-  title: string;
+export class UpdateTaskDto extends CreateTaskDto{}
 
-  @IsString()
-  @IsNotEmpty()
-  description: string;
-
+export class UpdateStateDto {
   @IsString()
   @IsNotEmpty()
   status: string;

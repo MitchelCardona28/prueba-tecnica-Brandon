@@ -1,0 +1,12 @@
+# Use root/example as user/password credentials
+services:
+
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: tasks
+      MYSQL_ROOT_PASSWORD: wizzer123
+    ports:
+      - 3306:3306
+    # (this is just an example, not intended to be a production configuration)
