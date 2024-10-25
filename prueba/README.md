@@ -11,14 +11,12 @@ This project was implemented using the next tools or libraries:
 - NestJs, TypeORM, MySQL and Docker.
 
 
-# Running the project 
+## Running the project 
 
 ### Requirements
 
 - Docker Engine version `27.2.0` or similar. If you don't have it installed, you can see instructions [here](https://docs.docker.com/engine/install/).
 - Docker Compose version `2.29.2` or similar. If you don't have it installed, you can see instructions [here](https://docs.docker.com/compose/install/).
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Project setup
 
@@ -34,10 +32,6 @@ $ npm run start
 
 # watch mode
 $ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
 
 ## Run tests
 
@@ -77,17 +71,3 @@ Check out a few resources that may come in handy when working with NestJS:
 - Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
 - To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
 - Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
