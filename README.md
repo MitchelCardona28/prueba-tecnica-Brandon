@@ -37,7 +37,7 @@ $ npm install
 $ npm run start:dev
 ```
 
-## Instructions for running Database migration
+## Instructions for running database migration
 
 **IMPORTANT:** The next commands must be executed on root project directory.
 
