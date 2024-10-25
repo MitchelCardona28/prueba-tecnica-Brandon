@@ -52,7 +52,7 @@ $ npm install
     $ npm run migrations:run
     ```
 
-5. Generate database migration (optional):
+5. Generate database migration if needed:
 
     ```bash
     $ npm run migrations:gen
