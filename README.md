@@ -39,7 +39,7 @@ $ npm run start:dev
 
 ## Instructions for running database migration
 
-**IMPORTANT:** The next commands must be executed on root project directory.
+**IMPORTANT:** The next commands must be executed on prueba project directory.
 
 1. Start database:
 
