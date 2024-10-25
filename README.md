@@ -13,7 +13,7 @@
 
 This project was implemented using the next tools or libraries:
 
-- NestJs, TypeORM, MySQL and Docker.
+- NestJs, TypeORM, MySQL, Docker and NPM.
 
 
 ## Running the project 
