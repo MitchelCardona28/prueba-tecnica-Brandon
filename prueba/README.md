@@ -31,27 +31,36 @@ $ npm install
 ## Compile and run the project
 
 ```bash
-# development
-$ npm run start
-
 # watch mode
 $ npm run start:dev
 ```
 
-### Instructions for running Database migration
+## Instructions for running Database migration
 
 **IMPORTANT:** The next commands must be executed on root project directory.
 
-- Execute database and server:
+- Init database:
 
     ```bash
     docker-compose up
+    ```
+
+- Generate database migration (optional):
+
+    ```bash
+    npm run migrations:gen
     ```
     
 - Run the database migration:
 
     ```bash
     npm run migrations:run
+    ```
+
+- Revert database migration if needed:
+
+    ```bash
+    npm run migrations:revert
     ```
 
 ## Endpoints
