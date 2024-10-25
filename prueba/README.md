@@ -39,7 +39,7 @@ $ npm run start:dev
 
 **IMPORTANT:** The next commands must be executed on root project directory.
 
-1. Init database:
+1. Start database:
 
     ```bash
     docker-compose up
