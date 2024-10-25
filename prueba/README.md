@@ -39,25 +39,25 @@ $ npm run start:dev
 
 **IMPORTANT:** The next commands must be executed on root project directory.
 
-- Init database:
+1. Init database:
 
     ```bash
     docker-compose up
     ```
-
-- Generate database migration (optional):
-
-    ```bash
-    npm run migrations:gen
-    ```
     
-- Run the database migration:
+2. Run the database migration:
 
     ```bash
     npm run migrations:run
     ```
 
-- Revert database migration if needed:
+3. Generate database migration (optional):
+
+    ```bash
+    npm run migrations:gen
+    ```
+
+4. Revert database migration if needed:
 
     ```bash
     npm run migrations:revert
