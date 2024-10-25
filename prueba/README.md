@@ -4,6 +4,8 @@
 - [Running the project](#Running-the-project)
   - [Requirements](#requirements)
   - [Project setup](#project-setup)
+- [Compile and run the project](#compile-and-run-the-project)
+- [Instructions for running Database migration](#instructions-for-running-Database-migration)
 
 
 ## Project implementation summary
@@ -36,18 +38,21 @@ $ npm run start
 $ npm run start:dev
 ```
 
-## Run tests
+### Instructions for running Database migration
 
-```bash
-# unit tests
-$ npm run test
+**IMPORTANT:** The next commands must be executed on root project directory.
 
-# e2e tests
-$ npm run test:e2e
+- Execute database and server:
 
-# test coverage
-$ npm run test:cov
-```
+    ```bash
+    docker-compose up
+    ```
+    
+- Run the database migration:
+
+    ```bash
+    npm run migrations:run
+    ```
 
 ## Resources
 
