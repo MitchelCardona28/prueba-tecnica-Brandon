@@ -36,7 +36,7 @@ $ npm install
 1. Start database:
 
     ```bash
-    $ docker-compose up
+    $ docker compose up
     ```
 
 2. Compile and run the project
