@@ -44,25 +44,25 @@ $ npm run start:dev
 1. Start database:
 
     ```bash
-    docker-compose up
+    $ docker-compose up
     ```
     
 2. Run the database migration:
 
     ```bash
-    npm run migrations:run
+    $ npm run migrations:run
     ```
 
 3. Generate database migration (optional):
 
     ```bash
-    npm run migrations:gen
+    $ npm run migrations:gen
     ```
 
 4. Revert database migration if needed:
 
     ```bash
-    npm run migrations:revert
+    $ npm run migrations:revert
     ```
 
 ## Endpoints
