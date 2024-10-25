@@ -4,7 +4,6 @@
 - [Running the project](#running-the-project)
   - [Requirements](#requirements)
   - [Project setup](#project-setup)
-- [Compile and run the project](#compile-and-run-the-project)
 - [Instructions for running Database migration](#instructions-for-running-database-migration)
 - [Endpoints](#endpoints)
 - [Resources](#resources)
@@ -30,13 +29,6 @@ This project was implemented using the next tools or libraries:
 $ npm install
 ```
 
-## Compile and run the project
-
-```bash
-# watch mode
-$ npm run start:dev
-```
-
 ## Instructions for running database migration
 
 **IMPORTANT:** The next commands must be executed on root project directory.
@@ -46,20 +38,27 @@ $ npm run start:dev
     ```bash
     $ docker-compose up
     ```
+
+2. Compile and run the project
+
+   ```bash
+   # watch mode
+   $ npm run start:dev
+   ```
     
-2. Run the database migration:
+4. Run the database migration:
 
     ```bash
     $ npm run migrations:run
     ```
 
-3. Generate database migration (optional):
+5. Generate database migration (optional):
 
     ```bash
     $ npm run migrations:gen
     ```
 
-4. Revert database migration if needed:
+6. Revert database migration if needed:
 
     ```bash
     $ npm run migrations:revert
