@@ -6,6 +6,8 @@
   - [Project setup](#project-setup)
 - [Compile and run the project](#compile-and-run-the-project)
 - [Instructions for running Database migration](#instructions-for-running-database-migration)
+- [Endpoints](#endpoints)
+- [Resources](#resources)
 
 
 ## Project implementation summary
@@ -22,7 +24,7 @@ This project was implemented using the next tools or libraries:
 - Docker Engine version `27.2.0` or similar. If you don't have it installed, you can see instructions [here](https://docs.docker.com/engine/install/).
 - Docker Compose version `2.29.2` or similar. If you don't have it installed, you can see instructions [here](https://docs.docker.com/compose/install/).
 
-## Project setup
+### Project setup
 
 ```bash
 $ npm install
