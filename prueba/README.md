@@ -1,11 +1,11 @@
 # Wizzer Backend Challenge
 
 - [Project implementation summary](#project-implementation-summary)
-- [Running the project](#Running-the-project)
+- [Running the project](#running-the-project)
   - [Requirements](#requirements)
   - [Project setup](#project-setup)
 - [Compile and run the project](#compile-and-run-the-project)
-- [Instructions for running Database migration](#instructions-for-running-Database-migration)
+- [Instructions for running Database migration](#instructions-for-running-database-migration)
 
 
 ## Project implementation summary
@@ -54,15 +54,33 @@ $ npm run start:dev
     npm run migrations:run
     ```
 
+## Endpoints
+- cURL commands
+  
+  ```bash
+  # Populate
+  curl --location --request GET 'http://127.0.0.1:3000/tasks
+
+  # Get task by ID
+  curl --location --request GET 'http://127.0.0.1:3000/tasks/[id_number]
+
+  # Create a new task
+  curl --location --request POST 'http://127.0.0.1:3000/tasks
+
+  # Update task details
+  curl --location --request PUT 'http://127.0.0.1:3000/tasks/[id_number]
+
+  # Delete a task
+  curl --location --request DELETE 'http://127.0.0.1:3000/tasks/[id_number]
+
+  # Update task status
+  curl --location --request PATCH 'http://127.0.0.1:3000/tasks/[id_number]
+  ```
+
+  
+
+
 ## Resources
 
-Check out a few resources that may come in handy when working with NestJS:
-
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+- `https://docs.nestjs.com/techniques/database`
+- `https://typeorm.io/migrations`
