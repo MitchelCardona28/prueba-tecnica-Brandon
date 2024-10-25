@@ -77,13 +77,13 @@ $ npm install
   # Create a new task
   curl --location --request POST 'http://127.0.0.1:3000/tasks
 
-  # Update task details
+  # Update task details by ID
   curl --location --request PUT 'http://127.0.0.1:3000/tasks/[id_number]
 
-  # Delete a task
+  # Delete a task by ID
   curl --location --request DELETE 'http://127.0.0.1:3000/tasks/[id_number]
 
-  # Update task status
+  # Update task status ID
   curl --location --request PATCH 'http://127.0.0.1:3000/tasks/[id_number]
   ```
 
