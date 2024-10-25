@@ -67,7 +67,7 @@ $ npm run start:dev
 - cURL commands
   
   ```bash
-  # Populate
+  # Get all tasks
   curl --location --request GET 'http://127.0.0.1:3000/tasks
 
   # Get task by ID
