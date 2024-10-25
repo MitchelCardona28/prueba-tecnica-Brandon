@@ -1,2 +1,2 @@
 # prueba-tecnica-Brandon
-Prueba técnica utilizando los frameworks Nest.js y TypeORM. Toda la información a cerca de la instalación del proyecto y ejecución de la base de datos la encontrarás dentro de la carpeta ```prueba```.
+Technical test using Nest.js and TypeORM frameworks. All the information about the project installation and database execution can be found inside the ``prueba`` folder.
