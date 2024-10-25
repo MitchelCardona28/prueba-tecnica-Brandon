@@ -65,7 +65,7 @@ $ npm install
     ```
 
 ## Endpoints
-- cURL commands
+### cURL commands
   
   ```bash
   # Get all tasks
